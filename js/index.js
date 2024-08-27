@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
                         console.log('li:' + li.firstChild.textContent)
                         // let d = li.innerText.split('de');
                         // i = array.indexOf(d[0]);
-                        fetch('http://localhost:3000/UpdateTodo/', { // Replace with your API endpoint
+                        fetch('https://todo-list-backend-3.onrender.com/UpdateTodo/', { // Replace with your API endpoint
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'application/json',
@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 // i = array.indexOf(array.name);
                 console.log('index:' + ind);
 
-                fetch('http://localhost:3000/DeleteTodo/', { // Replace with your API endpoint
+                fetch('https://todo-list-backend-3.onrender.com/DeleteTodo/', { // Replace with your API endpoint
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -194,7 +194,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
     //localstorage
     async function refresh() {
-        fetch('http://localhost:3000/getAllItems/', { // Replace with your API endpoint
+        fetch('https://todo-list-backend-3.onrender.com/getAllItems/', { // Replace with your API endpoint
             method: 'GET'
         })
             .then(response => response.json())
