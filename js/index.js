@@ -222,7 +222,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             console.log("fee:", storegee)
             list.innerHTML = "";
        
-            array.push({ item: input.value, priority: dropdown.value });
+            array.push({ Item: input.value, Priority: dropdown.value });
             printlist(array);//function add to list
             input.value = "";
             input.focus();
